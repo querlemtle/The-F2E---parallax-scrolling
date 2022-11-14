@@ -1,0 +1,90 @@
+.slogan {
+  padding: var(--spacing-4xl);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  /* preserve white space in slogan */
+  white-space: pre-wrap;
+}
+
+/* change background image's opacity: https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity*/
+.slogan::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/part4-bg.png");
+  background-attachment: fixed;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+.slogan__title,
+.slogan__subtitle {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  opacity: 0;
+  transform: translateY(var(--spacing-4xl));
+}
+
+.slogan__title {
+  font-size: var(--font-3xl);
+  font-weight: 500;
+  color: var(--color-secondary);
+  letter-spacing: var(--spacing-xs);
+}
+
+.slogan__subtitle {
+  font-size: var(--font-xl);
+  font-weight: 500;
+  color: var(--light-70);
+  letter-spacing: var(--spacing-xs);
+  margin-top: calc(1.5 * var(--spacing-4xl));
+}
+
+@media screen and (min-width: 992px) {
+  .slogan__title {
+    font-size: var(--font-4xl);
+    font-weight: 700;
+    letter-spacing: var(--spacing-base);
+  }
+
+  .slogan__subtitle {
+    font-size: var(--font-2xl);
+    font-weight: 400;
+    letter-spacing: var(--spacing-xs);
+  }
+
+  .slogan__bg--triangle {
+    background-image: url("../../assets/part4-triangle.png");
+    background-size: 100% 100%;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .slogan__bg--rectangle {
+    background-image: url("../../assets/part4-rectangle.png");
+    background-size: 100% 100%;
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: var(--spacing-4xl);
+  }
+
+  .slogan__bg--circle {
+    background-image: url("../../assets/part4-circle.png");
+    background-size: 100% 100%;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    bottom: calc(-1 * var(--spacing-xxl));
+    right: calc(-1 * var(--spacing-xxl));
+  }
+}

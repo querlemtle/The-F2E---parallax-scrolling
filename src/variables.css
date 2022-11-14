@@ -1,0 +1,30 @@
+:root {
+  /*  typography */
+  --font-family: 'Noto Sans TC',
+    sans-serif;
+  --font-base: 1rem; /* 16px */
+  --font-xl: 1.25rem; /* 20px */
+  --font-2xl: 2rem; /* 32px */
+  --font-3xl: 3rem; /* 48px */
+  --font-4xl: 3.75rem; /* 60px */
+  /* colors */
+  --color-primary: hsl(182, 100%, 46%);
+  --color-secondary: hsl(87, 80%, 48%);
+  --dark-100: hsl(212, 93%, 11%);
+  --dark-70: hsla(212, 93%, 11%, 0.7);
+  --dark-40: hsla(212, 93%, 11%, 0.4);
+  --dark-10: hsla(212, 93%, 11%, 0.1);
+  --light-100: hsl(0, 0%, 100%);
+  --light-70: hsla(0, 0%, 100%, 0.7);
+  --light-40: hsla(0, 0%, 100%, 0.4);
+  --light-10: hsla(0, 0%, 100%, 0.1);
+  /* spacing */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-s: 0.75rem; /* 12px */
+  --spacing-base: 1rem; /* 16px */
+  --spacing-xl: 1.5rem; /* 24px */
+  --spacing-2xl: 2rem; /* 32px */
+  --spacing-3xl: 2.5rem; /* 40px */
+  --spacing-4xl: 3rem; /* 48px */
+  --spacing-xxl: 9.375rem; /* 150px */
+}

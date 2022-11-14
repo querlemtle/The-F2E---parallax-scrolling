@@ -1,0 +1,21 @@
+.counter__count {
+  color: var(--color-secondary);
+  font-size: var(--font-3xl);
+  font-weight: 500;
+}
+
+.counter__title {
+  color: var(--light-70);
+}
+
+@media screen and (min-width: 992px) {
+  .counter {
+    padding-left: calc(1.25 * var(--spacing-4xl));
+  }
+
+  .counter__count {
+    font-size: var(--font-4xl);
+    font-weight: bold;
+    letter-spacing: var(--spacing-xs);
+  }
+}

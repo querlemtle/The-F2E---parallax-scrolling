@@ -1,0 +1,123 @@
+.issues {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  row-gap: var(--spacing-3xl);
+  padding: var(--spacing-xxl) 0;
+}
+
+.issues__bg,
+.issues__fg {
+  display: none;
+}
+
+.issues__item {
+  border: 1px solid var(--color-primary);
+  background-color: var(--light-10);
+  color: var(--color-primary);
+  padding: var(--spacing-2xl);
+  translate: calc(-1 * var(--spacing-base));
+  opacity: 0;
+  position: relative;
+}
+
+/* Create little squares for each corner*/
+.issues__item::before,
+.issues__item::after,
+.issues__corner::before,
+.issues__corner::after {
+  content: "";
+  position: absolute;
+  background-color: var(--light-10);
+  border: 1px solid var(--color-primary);
+  width: var(--spacing-base);
+  height: var(--spacing-base);
+}
+
+/* Setting every square's position */
+.issues__item::before {
+  top: -10%;
+  right: -3.5%;
+}
+
+.issues__item::after {
+  top: -10%;
+  left: -3.5%;
+}
+
+.issues__corner::before {
+  bottom: -10%;
+  left: -3.5%;
+}
+
+.issues__corner::after {
+  bottom: -10%;
+  right: -3.5%;
+}
+
+@media screen and (min-width: 992px) {
+  .issues {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 0;
+    position: relative;
+  }
+
+  .issues__bg {
+    display: block;
+    background-image: url("../../assets/part2-bg.png");
+    background-size: 200% 100%;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 12.5%;
+    position: absolute;
+    top: 20%;
+    left: var(--spacing-xxl);
+  }
+
+  .issues__bg:nth-child(2) {
+    top: 40%;
+    left: 0;
+  }
+
+  .issues__bg:nth-child(3) {
+    top: 60%;
+  }
+
+  .issues__bg:nth-child(4) {
+    top: 80%;
+    left: 0;
+  }
+
+  .issues__fg {
+    opacity: 0;
+    display: block;
+    background-image: url("../../assets/part2-fg.png");
+    background-size: 100% 100%;
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transform: translateY(var(--spacing-2xl));
+    z-index: 1;
+  }
+
+  .issues__item {
+    padding: var(--spacing-xl) var(--spacing-4xl);
+    letter-spacing: 2px;
+  }
+
+  .issues__item--first-issue {
+    transform: translateX(var(--spacing-4xl));
+    grid-column: 6 / 11;
+  }
+
+  .issues__item--second-issue {
+    grid-column: 2 / 7;
+  }
+
+  .issues__item--third-issue {
+    grid-column: 3 / 8;
+  }
+}

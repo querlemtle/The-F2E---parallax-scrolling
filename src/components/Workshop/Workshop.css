@@ -1,0 +1,16 @@
+.workshop {
+  background-color: var(--color-primary);
+}
+
+.workshop__card {
+  color: var(--dark-100);
+}
+
+.workshop__card-name {
+  border-bottom: 1px solid var(--dark-100);
+}
+
+.workshop__card-content,
+.workshop__card-price {
+  color: var(--dark-70);
+}

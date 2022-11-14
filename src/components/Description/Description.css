@@ -1,0 +1,40 @@
+.description__title {
+  font-size: var(--font-3xl);
+  color: var(--color-secondary);
+  opacity: 0;
+  transform: translateY(var(--spacing-4xl));
+}
+
+.description__title--mobile {
+  text-align: center;
+}
+
+.description__title--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .description {
+    background-image: url("../../assets/part6-flow.svg");
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 0.6fr auto 1fr;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-areas:
+      ". ."
+      ". title"
+      ". stage";
+    margin-bottom: var(--spacing-xxl);
+  }
+
+  .description__title--mobile {
+    display: none;
+  }
+
+  .description__title--desktop {
+    display: block;
+    grid-area: title;
+    align-self: end;
+    text-align: right;
+  }
+}

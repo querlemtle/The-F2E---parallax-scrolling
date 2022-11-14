@@ -1,0 +1,29 @@
+.context {
+  grid-area: context;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: calc(0.8 * var(--spacing-xxl));
+}
+
+.context__container {
+  opacity: 0;
+  transform: translateY(var(--spacing-4xl));
+}
+
+.context__title {
+  margin-bottom: var(--spacing-s);
+  font-weight: 400;
+}
+
+.context__tag {
+  margin-bottom: var(--spacing-xl);
+}
+
+.context__title,
+.context__tag {
+  color: var(--color-secondary);
+}
+
+.context__sponsor {
+  color: var(--light-70);
+}

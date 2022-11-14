@@ -1,0 +1,32 @@
+.banner__pic {
+  width: 100%;
+}
+
+.banner__counters {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    display: grid;
+    grid-template: "banner";
+    gap: var(--spacing-xl);
+  }
+
+  .banner__pic {
+    grid-area: banner;
+  }
+
+  .banner__counters {
+    grid-area: banner;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: start;
+    align-items: end;
+    text-align: left;
+    margin-left: var(--spacing-xl);
+  }
+}
