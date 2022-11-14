@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/The-F2E---parallax-scrolling/static/css/main.3efe16ce.css",
+    "main.js": "/The-F2E---parallax-scrolling/static/js/main.d7e38c2e.js",
+    "static/media/part6-flow.svg": "/The-F2E---parallax-scrolling/static/media/part6-flow.fdb09c3fd28a15571621.svg",
+    "static/media/part3-fg.png": "/The-F2E---parallax-scrolling/static/media/part3-fg.7b44ba1f01f27d185da0.png",
+    "static/media/part2-bg.png": "/The-F2E---parallax-scrolling/static/media/part2-bg.d7212faaade9ec434b13.png",
+    "static/media/desktop-banner.png": "/The-F2E---parallax-scrolling/static/media/desktop-banner.b067c11b3251464690e4.png",
+    "static/media/mobile-banner.png": "/The-F2E---parallax-scrolling/static/media/mobile-banner.184b4161075b1e097b99.png",
+    "static/media/part2-fg.png": "/The-F2E---parallax-scrolling/static/media/part2-fg.94751c4aa3651998cd8d.png",
+    "static/media/part4-circle.png": "/The-F2E---parallax-scrolling/static/media/part4-circle.3dd7cbcf9b09ddf08f98.png",
+    "static/media/part4-bg.png": "/The-F2E---parallax-scrolling/static/media/part4-bg.433c824991ee317c2172.png",
+    "static/media/part4-rectangle.png": "/The-F2E---parallax-scrolling/static/media/part4-rectangle.521e5169c5641854ace2.png",
+    "static/media/part4-triangle.png": "/The-F2E---parallax-scrolling/static/media/part4-triangle.76ae712a05bcfb38525d.png",
+    "static/media/part3-title.svg": "/The-F2E---parallax-scrolling/static/media/part3-title.0a96626f9079a12c4305065652aa5981.svg",
+    "index.html": "/The-F2E---parallax-scrolling/index.html",
+    "static/media/part7-reviewer-icon.svg": "/The-F2E---parallax-scrolling/static/media/part7-reviewer-icon.c36f4cae9cd39be2fc0921654d21cd50.svg",
+    "static/media/part7-award-icon.svg": "/The-F2E---parallax-scrolling/static/media/part7-award-icon.af99a98a8ae747e23b14f7320f8a3d52.svg",
+    "main.3efe16ce.css.map": "/The-F2E---parallax-scrolling/static/css/main.3efe16ce.css.map",
+    "main.d7e38c2e.js.map": "/The-F2E---parallax-scrolling/static/js/main.d7e38c2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3efe16ce.css",
+    "static/js/main.d7e38c2e.js"
+  ]
+}
